@@ -14,6 +14,7 @@ You are tasked with implementing a function for a simple "Divisibility Game." Th
 ### Expected Output
 
 For example, running the function with `n = 15` should produce:
+```
 1
 2
 Alpha
@@ -29,4 +30,5 @@ AlphaDelta
 13
 14
 Gamma
+```
 
