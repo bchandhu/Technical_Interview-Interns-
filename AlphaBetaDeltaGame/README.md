@@ -5,8 +5,8 @@
 
 You are tasked with implementing a function for a simple "Divisibility Game." The goal is to output specific words for numbers based on their divisibility, following the rules below:
 
-If a number is divisible by 2, print `"Alpha"`
-If a number is divisible by 3, print `"Beta"`
+1. If a number is divisible by 2, print `"Alpha"`
+2. If a number is divisible by 3, print `"Beta"`
 If a number is divisible by 5, print `"Gamma"`
 If a number is divisible by 2 and 3, print `"AlphaBeta"`
 If a number is divisible by 2 and 5, print `"AlphaGamma"`
