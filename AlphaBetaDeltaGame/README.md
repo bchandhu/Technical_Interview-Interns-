@@ -7,13 +7,13 @@ You are tasked with implementing a function for a simple "Divisibility Game." Th
 
 1. If a number is divisible by 2, print `"Alpha"`
 2. If a number is divisible by 3, print `"Beta"`
-If a number is divisible by 5, print `"Gamma"`
-If a number is divisible by 2 and 3, print `"AlphaBeta"`
-If a number is divisible by 2 and 5, print `"AlphaGamma"`
-If a number is divisible by 3 and 5, print `"BetaGamma"`
-If a number is divisible by all three numbers, print `"AlphaBetaGamma"`
-else, print the number
-with an expected output of:
+3. If a number is divisible by 5, print `"Gamma"`
+4. If a number is divisible by 2 and 3, print `"AlphaBeta"`
+5. If a number is divisible by 2 and 5, print `"AlphaGamma"`
+6. If a number is divisible by 3 and 5, print `"BetaGamma"`
+7. If a number is divisible by all three numbers, print `"AlphaBetaGamma"`
+8. else, print the number
+9. with an expected output of:
 
 
 ### Expected Output
