@@ -59,8 +59,8 @@
 ### **Debugging (/2)**
 
 - **Error Handling:**
-  - [ ] Identifies and corrects logic errors (e.g., incorrect bounds for the loop).
-  - [ ] Ensures the code doesn’t break for edge cases.
+  - [ ] Identifies errors in logic or syntax.
+  - [ ] Fixes errors and refines the code efficiently.
 
 ---
 
