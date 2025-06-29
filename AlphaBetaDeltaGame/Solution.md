@@ -1,34 +1,112 @@
-# Divisibility Game - Multi-language Solutions
+
+# Divisibility Game Solutions
 
 ## Python
-```python
-def divisibilityGame(n):
-    for i in range(1, n + 1):
-        output = ""
-        if i % 2 == 0:
-            output += "Alpha"
-        if i % 3 == 0:
-            output += "Beta"
-        if i % 5 == 0:
-            output += "Gamma"
-        print(output if output else i)
 
-# Example usage
-divisibilityGame(30)
+```python
+def divisibility_game(n):
+    for i in range(1, n + 1):
+        if i % 2 == 0 and i % 3 == 0 and i % 5 == 0:
+            print("AlphaBetaGamma")
+        elif i % 2 == 0 and i % 3 == 0:
+            print("AlphaBeta")
+        elif i % 2 == 0 and i % 5 == 0:
+            print("AlphaGamma")
+        elif i % 3 == 0 and i % 5 == 0:
+            print("BetaGamma")
+        elif i % 2 == 0:
+            print("Alpha")
+        elif i % 3 == 0:
+            print("Beta")
+        elif i % 5 == 0:
+            print("Gamma")
+        else:
+            print(i)
+```
+
+---
+
+## C
+
+```c
+#include <stdio.h>
+
+void divisibilityGame(int n) {
+    for (int i = 1; i <= n; i++) {
+        if (i % 2 == 0 && i % 3 == 0 && i % 5 == 0)
+            printf("AlphaBetaGamma\n");
+        else if (i % 2 == 0 && i % 3 == 0)
+            printf("AlphaBeta\n");
+        else if (i % 2 == 0 && i % 5 == 0)
+            printf("AlphaGamma\n");
+        else if (i % 3 == 0 && i % 5 == 0)
+            printf("BetaGamma\n");
+        else if (i % 2 == 0)
+            printf("Alpha\n");
+        else if (i % 3 == 0)
+            printf("Beta\n");
+        else if (i % 5 == 0)
+            printf("Gamma\n");
+        else
+            printf("%d\n", i);
+    }
+}
+```
+
+---
+
+## C++
+
+```cpp
+#include <iostream>
+using namespace std;
+
+void divisibilityGame(int n) {
+    for (int i = 1; i <= n; ++i) {
+        if (i % 2 == 0 && i % 3 == 0 && i % 5 == 0)
+            cout << "AlphaBetaGamma" << endl;
+        else if (i % 2 == 0 && i % 3 == 0)
+            cout << "AlphaBeta" << endl;
+        else if (i % 2 == 0 && i % 5 == 0)
+            cout << "AlphaGamma" << endl;
+        else if (i % 3 == 0 && i % 5 == 0)
+            cout << "BetaGamma" << endl;
+        else if (i % 2 == 0)
+            cout << "Alpha" << endl;
+        else if (i % 3 == 0)
+            cout << "Beta" << endl;
+        else if (i % 5 == 0)
+            cout << "Gamma" << endl;
+        else
+            cout << i << endl;
+    }
+}
 ```
 
 ---
 
 ## Java
+
 ```java
 public class DivisibilityGame {
     public static void divisibilityGame(int n) {
         for (int i = 1; i <= n; i++) {
-            String output = "";
-            if (i % 2 == 0) output += "Alpha";
-            if (i % 3 == 0) output += "Beta";
-            if (i % 5 == 0) output += "Gamma";
-            System.out.println(output.isEmpty() ? i : output);
+            if (i % 2 == 0 && i % 3 == 0 && i % 5 == 0)
+                System.out.println("AlphaBetaGamma");
+            else if (i % 2 == 0 && i % 3 == 0)
+                System.out.println("AlphaBeta");
+            else if (i % 2 == 0 && i % 5 == 0)
+                System.out.println("AlphaGamma");
+            else if (i % 3 == 0 && i % 5 == 0)
+                System.out.println("BetaGamma");
+            else if (i % 2 == 0)
+                System.out.println("Alpha");
+            else if (i % 3 == 0)
+                System.out.println("Beta");
+            else if (i % 5 == 0)
+                System.out.println("Gamma");
+            else
+                System.out.println(i);
         }
     }
 
@@ -40,73 +118,27 @@ public class DivisibilityGame {
 
 ---
 
-## C
-```c
-#include <stdio.h>
-
-void divisibilityGame(int n) {
-    for (int i = 1; i <= n; i++) {
-        int flag = 0;
-        if (i % 2 == 0) {
-            printf("Alpha");
-            flag = 1;
-        }
-        if (i % 3 == 0) {
-            printf("Beta");
-            flag = 1;
-        }
-        if (i % 5 == 0) {
-            printf("Gamma");
-            flag = 1;
-        }
-        if (!flag) {
-            printf("%d", i);
-        }
-        printf("\n");
-    }
-}
-
-int main() {
-    divisibilityGame(30);
-    return 0;
-}
-```
-
----
-
-## C++
-```cpp
-#include <iostream>
-using namespace std;
-
-void divisibilityGame(int n) {
-    for (int i = 1; i <= n; i++) {
-        string output = "";
-        if (i % 2 == 0) output += "Alpha";
-        if (i % 3 == 0) output += "Beta";
-        if (i % 5 == 0) output += "Gamma";
-        if (output == "") cout << i << endl;
-        else cout << output << endl;
-    }
-}
-
-int main() {
-    divisibilityGame(30);
-    return 0;
-}
-```
-
----
-
 ## JavaScript
+
 ```javascript
 function divisibilityGame(n) {
     for (let i = 1; i <= n; i++) {
-        let output = "";
-        if (i % 2 === 0) output += "Alpha";
-        if (i % 3 === 0) output += "Beta";
-        if (i % 5 === 0) output += "Gamma";
-        console.log(output || i);
+        if (i % 2 === 0 && i % 3 === 0 && i % 5 === 0)
+            console.log("AlphaBetaGamma");
+        else if (i % 2 === 0 && i % 3 === 0)
+            console.log("AlphaBeta");
+        else if (i % 2 === 0 && i % 5 === 0)
+            console.log("AlphaGamma");
+        else if (i % 3 === 0 && i % 5 === 0)
+            console.log("BetaGamma");
+        else if (i % 2 === 0)
+            console.log("Alpha");
+        else if (i % 3 === 0)
+            console.log("Beta");
+        else if (i % 5 === 0)
+            console.log("Gamma");
+        else
+            console.log(i);
     }
 }
 
@@ -116,18 +148,24 @@ divisibilityGame(30);
 ---
 
 ## Pseudocode
-```pseudocode
-FUNCTION divisibilityGame(n):
-    FOR i FROM 1 TO n:
-        SET output = ""
-        IF i MOD 2 == 0:
-            output = output + "Alpha"
-        IF i MOD 3 == 0:
-            output = output + "Beta"
-        IF i MOD 5 == 0:
-            output = output + "Gamma"
-        IF output IS EMPTY:
-            PRINT i
-        ELSE:
-            PRINT output
+
+```
+function divisibilityGame(n):
+    for i from 1 to n:
+        if i divisible by 2 and 3 and 5:
+            print "AlphaBetaGamma"
+        else if i divisible by 2 and 3:
+            print "AlphaBeta"
+        else if i divisible by 2 and 5:
+            print "AlphaGamma"
+        else if i divisible by 3 and 5:
+            print "BetaGamma"
+        else if i divisible by 2:
+            print "Alpha"
+        else if i divisible by 3:
+            print "Beta"
+        else if i divisible by 5:
+            print "Gamma"
+        else:
+            print i
 ```
