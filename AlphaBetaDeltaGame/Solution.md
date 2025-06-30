@@ -22,6 +22,10 @@ def divisibility_game(n):
             print("Gamma")
         else:
             print(i)
+
+    divisibility_game(30)
+
+ 
 ```
 
 ---
