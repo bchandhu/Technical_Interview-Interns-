@@ -6,7 +6,7 @@
 
 ---
 
-### **Correctness**
+### **Correctness (/8)**
 
 - **Divisible by 2:**
   - [ ] Implements condition for numbers divisible by 2 (`Alpha`).
@@ -34,7 +34,7 @@
 
 ---
 
-### **Edge Cases**
+### **Edge Cases (/3)**
 
 - Handles the following edge cases:
   - [ ] `n = 1` (only one output: `1`).
@@ -43,14 +43,14 @@
 
 ---
 
-### **Code Efficiency (/20)**
+### **Code Efficiency (/3)**
 
 - [ ] Avoids redundant checks and optimizes conditionals.
 - [ ] Scales appropriately for larger inputs.
 
 ---
 
-### **Readability and Style (/20)**
+### **Readability and Style (/3)**
 
 - [ ] Follows PEP-8 conventions (e.g., indentation, spacing, naming).
 - [ ] Includes comments to explain logic.
@@ -74,7 +74,7 @@
 
 ---
 
-### **Behavior (/2)**
+### **Behavior (/3)**
 
 - **Coachability:**
   - [ ] Open to feedback and adapts the solution accordingly.  
@@ -85,6 +85,6 @@
 
 ---
 
-### **Final Score**
+### **Final Score (/24)**
 
 
